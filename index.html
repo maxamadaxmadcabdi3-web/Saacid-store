@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="so">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SAACID STORE — Gawaadhi, Cagafyo & Qalab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">SAACID <span>STORE</span></div>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#home">Hoyga</a><a href="#products">Alaabta</a><a href="#about">Nagu Saabsan</a><a href="#contact">Xiriir</a>
+    </nav>
+  </header>
 
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="eyebrow">GANACSIGAAGA ONLINE</p>
+        <h1>Ku iibso ama ka hel <strong>gawaadhi & cagafyo</strong> si fudud.</h1>
+        <p class="lead">SAACID STORE waa suuq online ah oo loogu talagalay gawaadhi, cagafyo iyo qalabka beeraha.</p>
+        <a class="btn" href="#products">Eeg Alaabta</a>
+        <a class="btn ghost" href="#contact">Nala Xiriir</a>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-head">
+        <div><p class="eyebrow">ALAABTA</p><h2>Alaabta la heli karo</h2></div>
+        <input id="search" oninput="filterProducts()" placeholder="Raadi alaab..." aria-label="Raadi alaab">
+      </div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <section id="about" class="about section">
+      <div><p class="eyebrow">SAACID STORE</p><h2>Ganacsi lagu kalsoonaan karo</h2>
+      <p>Waxaan kuu diyaarinaynaa meel fudud oo aad ku soo bandhigi karto alaabtaada, aadna macaamiisha ula xiriiri karto WhatsApp.</p></div>
+      <div class="stats"><div><b>24/7</b><span>Online</span></div><div><b>3+</b><span>Qaybo</span></div><div><b>WA</b><span>WhatsApp</span></div></div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">XIRIIR</p><h2>Diyaar ma u tahay inaad bilowdo?</h2>
+      <p>Ku beddel lambarka hoose lambarkaaga WhatsApp.</p>
+      <a class="btn" href="https://wa.me/251900000000" target="_blank">💬 WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>© 2026 SAACID STORE — Dhammaan xuquuqdu way dhowran tahay.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
